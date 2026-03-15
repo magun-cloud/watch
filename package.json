@@ -1,0 +1,37 @@
+{
+  "name": "@magun/watch",
+  "version": "1.0.0",
+  "description": "MCP server — search YouTube and play videos directly in your terminal from Claude Code",
+  "type": "module",
+  "bin": {
+    "watch-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "youtube",
+    "terminal",
+    "video",
+    "claude"
+  ],
+  "license": "MIT"
+}
