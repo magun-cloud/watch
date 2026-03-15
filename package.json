@@ -1,10 +1,11 @@
 {
   "name": "@magun/watch",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "MCP server — search YouTube and play videos directly in your terminal from Claude Code",
   "type": "module",
   "bin": {
-    "watch-mcp": "./dist/index.js"
+    "watch-mcp": "./dist/index.js",
+    "watch": "./dist/index.js"
   },
   "files": [
     "dist"
